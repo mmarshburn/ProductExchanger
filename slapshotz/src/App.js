@@ -8,6 +8,7 @@ import Sell from "./components/pages/Sell";
 import Categories from "./components/pages/Categories";
 import Profile from "./components/pages/Profile";
 
+
 function App() {
   return (
     <Router>
