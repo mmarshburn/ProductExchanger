@@ -32,7 +32,7 @@ app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
 // Set Port, hosting services will look for process.env.PORT
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3001));
 
 // start the server
 app.listen(app.get('port'), () => {
