@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { List, ListItem } from "../List";
 import hockey from "../hockey.json";
 import API from "../../utils/API";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, FormBtn } from "../components/Form";
 import DeleteBtn from "../components/DeleteBtn";
 
 class ProductList extends Component { 
