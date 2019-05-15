@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
+  // Gets all hockey images
   getProducts: function() {
-    return axios.get("/api/books");
+    return axios.get("/api/hockey");
   },
-  // Gets the book with the given id
+  // Gets the hockey images with the given id
   getProduct: function(id) {
-    return axios.get("/api/books/" + id);
+    return axios.get("/api/hockey/" + id);
   },
 };

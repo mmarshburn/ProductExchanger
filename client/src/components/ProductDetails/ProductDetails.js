@@ -7,12 +7,14 @@ import API from "../../utils/API";
 class ProductDetail extends Component {
   state = {
     product: {
-        'title': 'Sample Product',
-        'description': 'My Product description'
+        "title": "Sample Product",
+        "description": "My Product description",
+        "category": "Hockey Category"
     }
   };
+  
   // When this component mounts, grab the book with the _id of this.props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+
   componentDidMount() {
     API.getProduct(this.props.match.params.id)
       .then(res => this.setState({ product: res.data }))
@@ -22,6 +24,7 @@ class ProductDetail extends Component {
   render() {
     return (
       <Container fluid>
+        
         <Row>
           <Col size="md-12">
             <Jumbotron>
@@ -31,6 +34,7 @@ class ProductDetail extends Component {
             </Jumbotron>
           </Col>
         </Row>
+        
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
@@ -41,6 +45,18 @@ class ProductDetail extends Component {
             </article>
           </Col>
         </Row>
+
+        <Row>
+          <Col size="md-10 md-offset-1">
+            <article>
+              <h1>Category</h1>
+              <p>
+                {this.state.product.category}
+              </p>
+            </article>
+          </Col>
+        </Row>
+        
         <Row>
           <Col size="md-2">
             <Link to="/">← Back to Product List</Link>
