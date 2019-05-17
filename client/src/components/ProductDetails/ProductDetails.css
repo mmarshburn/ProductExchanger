@@ -1,0 +1,8 @@
+.jumbotron {
+    background-image: url("http://www.chelseatoronto.com/en/uploads/images/2016/11/hockey-arena-000047013004_xxxlarge-home-page-banner.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 20px;
+  }

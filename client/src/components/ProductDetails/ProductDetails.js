@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../Grid";
 import Jumbotron from "../Jumbotron";
 import API from "../../utils/API";
+import "./ProductDetails.css";
 
 class ProductDetail extends Component {
   state = {
@@ -13,7 +14,7 @@ class ProductDetail extends Component {
     }
   };
   
-  // When this component mounts, grab the book with the _id of this.props.match.params.id
+  // When this component mounts, grab the hockey product with the _id of this.props.match.params.id
 
   componentDidMount() {
     API.getProduct(this.props.match.params.id)
@@ -32,6 +33,17 @@ class ProductDetail extends Component {
                 {this.state.product.title}
               </h1>
             </Jumbotron>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col size="md-10 md-offset-1">
+            <article>
+              <h1>Title</h1>
+              <p>
+                {this.state.product.title}
+              </p>
+            </article>
           </Col>
         </Row>
         
@@ -56,7 +68,7 @@ class ProductDetail extends Component {
             </article>
           </Col>
         </Row>
-        
+
         <Row>
           <Col size="md-2">
             <Link to="/">← Back to Product List</Link>
