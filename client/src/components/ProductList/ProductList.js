@@ -11,6 +11,7 @@ import API from "../../utils/API";
 import { Input, FormBtn } from "../Form";
 import DeleteBtn from "../DeleteBtn";
 import HockeyCard from "../HockeyCard";
+import "./ProductList.css";
 
 
 class ProductList extends Component { 
@@ -66,10 +67,27 @@ class ProductList extends Component {
           
         <div>
 
-          <header class = "header">
-              <h1>Hockey Gear & Equipment!</h1>
-              <h2>Click on an individual product to select your item.</h2>
-            </header>
+          {/* <header class = "header">
+            <h2>Hockey Gear & Equipment!</h2>
+            <h3>Click on an individual product to select your item.</h3>
+          </header> */}
+
+
+
+          <Container fluid>
+        
+        <Row>
+          <Col size="md-12">
+            <Jumbotron>
+            {/* <header class = "header"> */}
+              <h2>Hockey Gear & Equipment!</h2>
+              <h3>Click on an individual product to select your item.</h3>
+            {/* </header>               */}
+            </Jumbotron>
+          </Col>
+        </Row>
+
+        </Container>
 
 
           <div className="wrapper">

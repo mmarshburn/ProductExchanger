@@ -37,7 +37,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h2>Title</h2>
+              <h4>Title</h4>
               <p>
                 {this.state.product.title}
               </p>
@@ -48,7 +48,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h2>Description</h2>
+              <h4>Description</h4>
               <p>
                 {this.state.product.description}
               </p>
@@ -59,7 +59,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h2>Category</h2>
+              <h4>Category</h4>
               <p>
                 {this.state.product.category}
               </p>
