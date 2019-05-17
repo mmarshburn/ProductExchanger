@@ -29,9 +29,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
-                {this.state.product.title}
-              </h1>
+              <h1>PRODUCT PAGE</h1>              
             </Jumbotron>
           </Col>
         </Row>
@@ -39,7 +37,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Title</h1>
+              <h2>Title</h2>
               <p>
                 {this.state.product.title}
               </p>
@@ -50,7 +48,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Description</h1>
+              <h2>Description</h2>
               <p>
                 {this.state.product.description}
               </p>
@@ -61,7 +59,7 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Category</h1>
+              <h2>Category</h2>
               <p>
                 {this.state.product.category}
               </p>
