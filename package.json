@@ -22,6 +22,7 @@
     "express": "^4.15.3",
     "jsonwebtoken": "^7.4.1",
     "material-ui": "^0.18.1",
+    "mongodb": "^3.2.4",
     "mongoose": "^4.10.4",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
@@ -42,5 +43,13 @@
     "babel-preset-react": "^6.24.1",
     "nodemon": "^1.11.0",
     "webpack": "^2.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmarshburn/ProductExchanger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmarshburn/ProductExchanger/issues"
+  },
+  "homepage": "https://github.com/mmarshburn/ProductExchanger#readme"
 }
