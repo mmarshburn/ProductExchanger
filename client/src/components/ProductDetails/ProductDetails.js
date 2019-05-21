@@ -37,7 +37,11 @@ class ProductDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
+<<<<<<< HEAD
               <h4>Title</h4>
+=======
+              <h1>Title</h1>
+>>>>>>> 8b47b97d35ff8fb82b31b29650c0d17bcb6df9ab
               <p>
                 {this.state.product.title}
               </p>
