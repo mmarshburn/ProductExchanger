@@ -1,4 +1,4 @@
-module.exports = {
-  mongoURI: "mongodb://localhost:27017/mern",
+    module.exports = {
+  mongoURI: process.env.MONGODB_URI || "mongodb://slapshotz:a12345678@ds049084.mlab.com:49084/heroku_v62g3vmk",
   secretOrKey: "secret"
 };

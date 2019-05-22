@@ -5,10 +5,7 @@ class ProductDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            product: {
-                'title': 'Sample Product',
-                'description': 'My Product description'
-            }
+            product: {  }
         };
     }
   // When this component mounts, grab the book with the _id of this.props.match.params.id
@@ -23,12 +20,12 @@ class ProductDetails extends Component {
     return (
             <div>
               <h1>
-                {this.state.product.title}
+                {this.state.product.name}
               </h1>
             <article>
-              <h1>Description</h1>
+              <h3>Category</h3>
               <p>
-                {this.state.product.description}
+                {this.state.product.category}
               </p>
             </article>
         </div>
